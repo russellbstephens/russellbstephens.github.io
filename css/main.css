@@ -81,3 +81,12 @@ main {
   height: 225px;
   margin-bottom: 15px;
 }
+
+@media (orientation: landscape) and (max-height: 500px) {
+  main {
+    margin-top: 0;
+  }
+  .roundrect {
+    height: 150px;
+  }
+}
