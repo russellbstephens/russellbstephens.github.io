@@ -89,6 +89,10 @@ main {
   &:hover {
     color: $color-link;
   }
+
+  @media (max-width: $breakpoint) {
+      font-size: $font-size--sm;
+    }
 }
 
 .roundrect {
