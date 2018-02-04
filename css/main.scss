@@ -19,10 +19,8 @@ $transition-timing: ease-out;
 body {
   display: flex;
   margin: 0;
-  // height: 100vh;
   flex-direction: column;
   justify-content: center;
-  // overflow: hidden;
 }
 
 main {
@@ -34,6 +32,14 @@ main {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  @media (orientation: landscape) and (max-height: 500px) {
+    margin-top: 0;
+  }
+
+  @media (max-width: $breakpoint) {
+    margin-top: 25px;
+  }
 }
 
 apps {
@@ -113,6 +119,14 @@ footer {
   border-radius: 50%;
   height: 200px;
   margin-bottom: 15px;
+
+  @media (orientation: landscape) and (max-height: 500px) {
+    height: 125px;
+  }
+
+  @media (max-width: $breakpoint) {
+    height: 125px;
+  }
 }
 
 .appicon {
@@ -124,25 +138,5 @@ footer {
 
   @media (max-width: $breakpoint) {
     height: 45px;
-  }
-}
-
-@media (orientation: landscape) and (max-height: 500px) {
-  main {
-    margin-top: 0;
-  }
-
-  .avatar {
-    height: 125px;
-  }
-}
-
-@media (max-width: $breakpoint) {
-  main {
-    margin-top: 25px;
-  }
-
-  .avatar {
-    height: 125px;
   }
 }
