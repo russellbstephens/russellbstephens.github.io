@@ -3,7 +3,7 @@ $breakpoint: 560px;
 $main-width: 80vw;
 
 $color-text: #242424;
-$color-link: #5F9EA0;
+$color-link: #a5aab2;
 $color-contact: #808080;
 $color-border: #ccc;
 
@@ -96,13 +96,13 @@ footer {
 
 .contact {
   margin-right: $font-size--sm;
-  color: $color-contact;
+  color: $color-link;
   text-decoration: none;
   font-size: 18px;
   transition: color $transition-duration $transition-timing;
 
   &:hover {
-    color: $color-link;
+    color: $color-contact;
   }
 
   @media (max-width: $breakpoint) {

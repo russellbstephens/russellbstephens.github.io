@@ -59,7 +59,7 @@ footer {
 
 .company {
   position: relative;
-  color: #5F9EA0;
+  color: #a5aab2;
   text-decoration: none;
 }
 
@@ -75,7 +75,7 @@ footer {
   bottom: -1px;
   left: 50%;
   height: 3px;
-  background: #5F9EA0;
+  background: #a5aab2;
   transition-property: right, left;
   transition-duration: 125ms;
   transition-timing-function: ease-out;
@@ -83,14 +83,14 @@ footer {
 
 .contact {
   margin-right: 20px;
-  color: #808080;
+  color: #a5aab2;
   text-decoration: none;
   font-size: 18px;
   transition: color 125ms ease-out;
 }
 
 .contact:hover {
-  color: #5F9EA0;
+  color: #808080;
 }
 
 @media (max-width: 560px) {
