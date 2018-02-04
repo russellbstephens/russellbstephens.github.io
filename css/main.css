@@ -17,7 +17,7 @@ main {
 
 @media (orientation: landscape) and (max-height: 500px) {
   main {
-    margin-top: 0;
+    margin-top: 10px;
   }
 }
 
@@ -34,6 +34,12 @@ apps {
   font-family: "Radley", "Palatino", serif;
 }
 
+@media (orientation: landscape) and (max-height: 500px) {
+  apps {
+    margin-bottom: -10px;
+  }
+}
+
 footer {
   margin: 40px auto 0;
   width: 80vw;
@@ -46,22 +52,9 @@ footer {
   font-size: 32px;
 }
 
-@media (min-width: 560px) {
-  .title {
-    font-size: 48px;
-  }
-}
-
 .position {
   margin: 5px 0 15px;
   font-size: 20px;
-}
-
-@media (min-width: 560px) {
-  .position {
-    margin-bottom: 20px;
-    font-size: 32px;
-  }
 }
 
 .company {
