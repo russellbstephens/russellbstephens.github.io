@@ -1,20 +1,32 @@
 body {
   display: flex;
   margin: 0;
-  height: 100vh;
   flex-direction: column;
   justify-content: center;
-  overflow: hidden;
 }
 
 main {
-  margin: -200px auto 0;
+  margin: 50px auto 0;
   width: 80vw;
   color: #242424;
   font-family: "Radley", "Palatino", serif;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+apps {
+  margin: 10px auto 0;
+  width: 80vw;
+  color: #242424;
+  font-family: "Radley", "Palatino", serif;
+}
+
+footer {
+  margin: 40px auto 0;
+  width: 80vw;
+  color: #242424;
+  font-family: "Radley", "Palatino", serif;
 }
 
 .title {
@@ -68,7 +80,7 @@ main {
   margin-right: 20px;
   color: #808080;
   text-decoration: none;
-  font-size: 32px;
+  font-size: 18px;
   transition: color 125ms ease-out;
 }
 
@@ -78,21 +90,44 @@ main {
 
 @media (max-width: 560px) {
   .contact {
-    font-size: 20px;
+    font-size: 16px;
   }
 }
 
-.roundrect {
+.avatar {
   border-radius: 50%;
-  height: 225px;
+  height: 200px;
   margin-bottom: 15px;
+}
+
+.appicon {
+  border: 1px #ccc solid;
+  border-radius: 17.544%;
+  height: 50px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+@media (max-width: 560px) {
+  .appicon {
+    height: 45px;
+  }
 }
 
 @media (orientation: landscape) and (max-height: 500px) {
   main {
     margin-top: 0;
   }
-  .roundrect {
-    height: 150px;
+  .avatar {
+    height: 125px;
+  }
+}
+
+@media (max-width: 560px) {
+  main {
+    margin-top: 25px;
+  }
+  .avatar {
+    height: 125px;
   }
 }
